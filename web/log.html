@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login|Page</title>
+    <link rel="stylesheet" href="log.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="mainBox">
+        <h1>Log In</h1>
+        <form action="web.html" onsubmit=" return validate()">
+            <div class="inputBox">
+                <span class="icon"><i class="bx bx-envelope"></i></span>
+                <input type="email" required id="mail">
+                <label for="">Email</label>
+            </div>
+
+            <div class="inputBox">
+              <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+              <input type="password" required id="pass">
+              <label for="">Password</label>
+          </div>
+
+          <div class="check">
+              <label for=""><input type="checkbox">Remember Me</label>
+              <a href="#">Forget Password</a>
+          </div>
+
+          <button type="submit" class="btn">Log In</button>
+
+          <div class="register">
+            <p>Don't have an account? <a href="#" class="registerLink">Sign Up!</a></p>
+          </div>
+
+        </form>
+    </div>
+  </div>
+      <script src="log.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>                                             
